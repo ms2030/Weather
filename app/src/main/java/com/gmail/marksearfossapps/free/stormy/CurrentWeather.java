@@ -15,6 +15,14 @@ public class CurrentWeather {
     private double mPrecipChance;
     private String mSummary;
 
+
+    private double windSpeed;
+    private int windBearing;
+    private String minutelySummary, hourlySummary, dailySummary;
+
+
+
+
     public String getTimeZone() {
         return mTimeZone;
     }
@@ -122,4 +130,46 @@ public class CurrentWeather {
     public void setSummary(String summary) {
         mSummary = summary;
     }
+
+    public double getWindSpeed() {
+        return windSpeed;
+    }
+
+    public void setWindSpeed(double windSpeed) {
+        this.windSpeed = windSpeed;
+    }
+
+    public int getWindBearing() {
+        return windBearing;
+    }
+
+    public void setWindBearing(int windBearing) {
+        this.windBearing = windBearing;
+    }
+
+    public String getMinutelySummary() {
+        return minutelySummary;
+    }
+
+    public void setMinutelySummary(String minutelySummary) {
+        this.minutelySummary = minutelySummary;
+    }
+
+    public String getHourlySummary() {
+        return hourlySummary;
+    }
+
+    public void setHourlySummary(String hourlySummary) {
+        this.hourlySummary = hourlySummary;
+    }
+
+    public String getDailySummary() {
+        return dailySummary;
+    }
+
+    public void setDailySummary(String dailySummary) {
+        this.dailySummary = dailySummary;
+    }
+
 }
+

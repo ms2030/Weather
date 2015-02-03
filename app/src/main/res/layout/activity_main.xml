@@ -15,19 +15,21 @@
         android:layout_height="wrap_content"
         android:text="--"
         android:id="@+id/temperatureLabel"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/timeLabel"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
         android:textAlignment="center"
         android:textSize="120sp"
-        android:textIsSelectable="false" />
+        android:textIsSelectable="false"
+        android:numeric="integer|signed"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wind ?mph from ###"
         android:id="@+id/windValue"
-        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:textSize="18sp"
         android:textColor="@android:color/white"
         android:layout_alignBottom="@+id/temperatureLabel"
@@ -48,8 +50,10 @@
         android:layout_height="wrap_content"
         android:text="..."
         android:id="@+id/timeLabel"
-        android:layout_above="@+id/temperatureLabel"
+        android:layout_below="@+id/locationLabel"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:textColor="#80ffffff"
         android:textSize="18sp"/>
 
@@ -58,11 +62,12 @@
         android:layout_height="wrap_content"
         android:text="Fort Wayne, IN"
         android:id="@+id/locationLabel"
-        android:layout_above="@+id/timeLabel"
+        android:layout_below="@+id/refreshImageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:textColor="#ffffc636"
-        android:textSize="24sp"/>
+        android:textSize="18sp"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -79,7 +84,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/temperatureLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:weightSum="100"
         android:id="@+id/linearLayout1">
 
@@ -167,11 +173,11 @@
         android:id="@+id/summaryLabel"
         android:textColor="#ffffc636"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
-        android:layout_above="@+id/minutelyLabel"
-        />
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
     android:layout_width="wrap_content"
@@ -179,6 +185,8 @@
     android:text="Minutely summary and on and on to force this to wrap at least one time"
     android:id="@+id/minutelyLabel"
     android:layout_above="@+id/houlyLabel"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
     android:layout_centerHorizontal="true"
     android:textColor="@android:color/white"/>
 
@@ -187,6 +195,8 @@
         android:layout_height="wrap_content"
         android:text="Hourly summary and on and on to force this to wrap at least one time"
         android:id="@+id/houlyLabel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_above="@+id/dailyLabel"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"/>
@@ -196,6 +206,8 @@
         android:layout_height="wrap_content"
         android:text="Daily summary and on and on to force this to wrap at least one time"
         android:id="@+id/dailyLabel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"/>

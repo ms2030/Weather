@@ -44,6 +44,11 @@ public class MainActivity extends ActionBarActivity {
     @InjectView(R.id.refreshImageView) ImageView mRefreshImageView;
     @InjectView(R.id.progressBar) ProgressBar mProgressBar;
 
+    @InjectView(R.id.windValue) String mWindValue;
+    @InjectView(R.id.minutelyLabel) String mMinutelyLabel;
+    @InjectView(R.id.hourlyLabel) String mHourlyLabel;
+    @InjectView(R.id.dailyLabel) String mDailyLabel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

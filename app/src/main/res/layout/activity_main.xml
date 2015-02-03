@@ -184,7 +184,7 @@
     android:layout_height="wrap_content"
     android:text="Minutely summary and on and on to force this to wrap at least one time"
     android:id="@+id/minutelyLabel"
-    android:layout_above="@+id/houlyLabel"
+    android:layout_above="@+id/hourlyLabel"
     android:layout_marginTop="5dp"
     android:layout_centerHorizontal="true"
     android:textColor="#a0ffffff"/>
@@ -193,7 +193,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hourly summary and on and on to force this to wrap at least one time"
-        android:id="@+id/houlyLabel"
+        android:id="@+id/hourlyLabel"
         android:layout_marginTop="5dp"
         android:layout_above="@+id/dailyLabel"
         android:layout_centerHorizontal="true"
